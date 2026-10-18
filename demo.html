@@ -3000,7 +3000,13 @@ demo2@example.com`,
           .replace(/[٠-٩]/g, (c) => arabic.indexOf(c));
       }
 
-      function isPlaceholder(v) { return typeof v === "string" && v.includes("{{") && v.includes("}}"); }
+      function isPlaceholder(v) {
+        // Build the delimiters from char codes. Writing them literally here would
+        // be swallowed by the panel's Go html/template renderer before the page
+        // ever reaches the browser, leaving this guard permanently dead.
+        const OB = String.fromCharCode(123, 123), CB = String.fromCharCode(125, 125);
+        return typeof v === "string" && v.includes(OB) && v.includes(CB);
+      }
       function normalize(v, fb) {
         let t = String(v ?? "").trim();
         if (!t || t === "<no value>" || isPlaceholder(t)) return fb;
