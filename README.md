@@ -61,14 +61,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/frank0live/aurora-subscripti
 
 ---
 
-## 🔗 ارتباط / Contact
-
-سوال، سفارش یا پشتیبانی نصب؟ از تلگرام پیام بدهید:
-
-**📬 [@master_supports](https://t.me/master_supports)** — https://t.me/master_supports
-
----
-
 ## فارسی
 صفحهٔ اشتراک سفارشی و **وایت‌لیبل** برای پنل **3x-ui** با طراحی Aurora Glass.
 
