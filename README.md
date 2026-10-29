@@ -73,3 +73,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/frank0live/aurora-subscripti
 **نصب خودکار:** `bash <(curl -fsSL https://raw.githubusercontent.com/frank0live/aurora-subscription/main/install.sh)`
 
 **نصب دستی:** در تنظیمات پنل، قالب اشتراک سفارشی را فعال کن و `subThemeDir` را به پوشه‌ای که `sub.html` داخل آن است اشاره بده.
+## Support
+
+- 💬 Telegram: [@master_supports](https://t.me/master_supports)
